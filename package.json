@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-	"homepage": "https://Kermishkov1996.github.io/",
+	"homepage": "https://Kermishkov1996.github.io/TestLab",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d app"
   },
   "author": "Kerm",
   "license": "ISC",
