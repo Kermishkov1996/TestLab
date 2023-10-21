@@ -98,8 +98,9 @@
 		width: 100%;
 		text-align: left;
 		z-index: 1;
-		height: 84vh;
     background-color: #fff;
+		height: 100vh;
+    border-bottom: 1px solid #eceff2;
 		li{
 			margin-left: 0;
 		}
@@ -128,9 +129,6 @@
 			border-top: 1px solid #eceff2;
     	margin-top: 100px;
 		}
-	}
-	.top{
-		height: 84vh;
 	}
 	.top-info{
 		max-width: 690px;
