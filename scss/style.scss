@@ -1,0 +1,428 @@
+@import "reset";
+@import "vars";
+
+body{
+	color: #191C1F;
+}
+
+/* HEADER */
+
+.header{
+	position: relative;
+	z-index: 1;
+}
+.container{
+	max-width: 1256px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.header-inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+}
+.logo{
+	a{
+		display: flex;
+	}
+	p{
+		color:$white;
+		@extend %graphik-bold;
+		font-size: 20px;
+		line-height: 24px;
+		margin-left: 9px;
+	}
+}
+.menu-btn{
+	width: 26px;
+	display: none;
+	div{
+		height: 3px;
+		margin-bottom: 10px;
+		background-color: $white;
+	}
+}
+.menu-list{
+	display: flex;
+	li{
+		margin-left: 24px;
+		list-style-type: none;
+	}
+	a{
+		color: $white;
+		@extend %graphik-normal;
+		font-size: 16px;
+		line-height: 28px;
+	}
+	a:hover{
+		border-bottom: 1px solid $white;
+	}
+}
+
+/* TOP */
+
+.top{
+	background: url(../images/Lunch_atop_a_Skyscraper\ 1.png) #2A6CEA no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	background-blend-mode: overlay;
+	height: 100vh;
+	position: relative;
+	top: -80px;
+	bottom: 0;
+}
+.top-inner{
+	display: flex;
+	justify-content: center;
+}
+.top-info{
+	max-width: 748px;
+	color: $white;
+	text-align: center;
+}
+.top-info-title{
+	@extend %graphik-bold;
+	font-size: 45px;
+	line-height: 64px;
+	text-transform: uppercase;
+	margin-top: 313px;
+	margin-bottom: 18px;
+}
+.top-info-descr{
+	@extend %graphik-normal;
+	font-size: 18px;
+	line-height: 32px;
+	margin-bottom: 92px;
+}
+.top-info-list{
+	list-style: none;
+	margin-bottom: 50px;
+}
+.top-info-btn{
+	@extend %graphik-bold;
+	font-size: 20px;
+	line-height: 24px;
+	color: $black;
+	padding: 20px 40px;
+	border-radius: 4px;
+	background: #ECEFF2;
+	&:hover{
+		background: #C2C8CD;
+	}
+	&:active{
+		background: #83898F;
+	}
+}
+
+/* JOB */
+
+.job-info{
+	text-align: center;
+	margin-bottom: 80px;
+}
+.job-info-title{
+	@extend %graphik-bold;
+	font-size: 40px;
+	line-height: 56px;
+	margin-bottom: 61px;
+}
+.job-info-rule{
+	display: flex;
+	text-align: left;
+	justify-content: space-between;
+}
+.job-info-rule-item{
+	width: 280px;
+}
+.job-info-rule-text{
+	@extend %graphik-bold;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 4px;
+	margin-top: 16px;
+}
+.job-info-rule-descr{
+	@extend %graphik-normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: $gray;
+}
+
+/* THIRD */
+
+.third-inner{
+	display: flex;
+	align-items: center;
+	margin-bottom: 80px;
+}
+.third-info-title{
+	@extend %graphik-bold;
+	font-size: 32px;
+	line-height: 40px;
+	margin-bottom: 18px;
+}
+.third-info-descr{
+	@extend %graphik-normal;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+/* REVIEWS */
+
+.reviews-title{
+	text-align: center;
+	@extend %graphik-bold;
+	font-size: 40px;
+	line-height: 56px;
+}
+.reviews{
+	padding-top: 57px;
+	background-color: #F6F8FA;
+}
+.reviews-slider{
+	margin-top: 32px;
+	.slick-slide{
+		margin: 0 16px;
+		padding-bottom: 50px;
+	}
+}
+.slick-list{
+	margin: 0 48px;
+}
+.reviews-box{
+	height: 316px;
+	background-color: $white;
+	border-radius: 8px;
+	box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.10);
+	padding: 22px 22px 30px;
+}
+.reviews-box-photo{ 
+	float: left;
+	margin-right: 16px;
+}
+.reviews-box-content{
+	width: 100%;
+}
+.reviews-box-surname{
+	@extend %graphik-bold;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 4px;
+}
+.reviews-box-city{
+	color: $gray;
+	@extend %graphik-normal;
+	font-size: 12px;
+	line-height: 16px;
+	margin-bottom: 20px;
+}
+.reviews-box-descr{
+	@extend %graphik-normal;
+	font-size: 14px;
+	line-height: 24px;
+}
+.reviews-slider .slick-dots{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	padding: 0 0 45px 0;
+	li{
+		margin: 0 10px;
+	}
+}
+.reviews-slider .slick-dots li.slick-active button{
+	background-color: $blue;
+}
+.reviews-slider .slick-dots button{
+	font-size: 0;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	padding: 0;
+	border: none;
+	background-color: #C2C8CD;
+	outline: none;
+}
+.arrow-right{
+	position: absolute;
+	top: 0;
+	left: 1184px;
+	padding: 138px 0px;
+	cursor: pointer;
+}
+.arrow-left{
+	position: absolute;
+	top: 0;
+	padding: 138px 0px;
+	cursor: pointer;
+}
+
+/* QUESTIONS */
+
+.questions-items{
+	max-width: 1008px;
+	margin: 0 100px;
+}
+.questions-title{
+	@extend %graphik-bold;
+	font-size: 40px;
+	line-height: 56px;
+	padding-top: 80px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.questions-item{
+	border-top: 1px solid #ECEFF2;
+		&_title{
+			@extend %graphik-bold;
+			font-size: 18px;
+			line-height: 32px;
+			padding: 24px 0;
+			position: relative;
+			cursor: pointer;
+				&::after{
+					content: url('../images/questions-pluz.png');
+					position: absolute;
+					right: 0;
+					top: 28px;
+				}
+				&:hover{
+					color: $blue;
+				}
+		}	
+}
+.questions-item_text{
+	color: $gray;
+	@extend %graphik-normal;
+	font-size: 18px;
+	line-height: 32px;
+	padding-bottom: 24px;
+	display: none;
+	max-width: 936px;
+}
+.questions-item.questions-item--active{
+	.questions-item_title::after{
+		transform: rotate(315deg);
+    position: absolute;
+    right: -3px;
+	}
+	.questions-item_text{
+		display: block;
+	}
+}
+
+/* CREDITS */
+
+.credits {
+	padding: 68px 0;
+	background-color: #f6f8fa;
+}
+.credits-inner{
+    display: flex;
+    flex-wrap: wrap;
+		justify-content: space-between;
+}
+.credits-info{
+	max-width: 592px;
+	&:nth-child(odd){
+		margin-right: 32px;
+	}
+	&:nth-child(2){
+		margin-bottom: 37px;
+	}
+}
+.credits-info-title{
+	@extend %graphik-bold;
+	font-size: 18px;
+	line-height: 32px;
+	margin-bottom: 17px;
+}
+.credits-info-descr{
+	@extend %graphik-normal;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+/* FORM */
+
+.form-info{
+	width: 800px;
+	margin: 0 auto;
+}
+.form-info-title{
+	margin-top: 80px;
+	margin-bottom: 44px;
+	text-align: center;
+	@extend %graphik-bold;
+	font-size: 40px;
+	line-height: 56px;
+}
+.form-info-line{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.form-info-input{
+	width: 49%;
+	padding: 14px;
+	border-radius: 4px;
+	border: 2px solid #F6F8FA;
+	background: #F6F8FA;
+	margin-bottom: 30px;
+	@extend %graphik-normal;
+	font-size: 18px;
+	line-height: 32px;
+	&::placeholder{
+		color: rgba (#5E646A, .4);
+	}
+}
+#scales{
+	width: 24px;
+	height: 24px;
+}
+#scale-text{
+	@extend %graphik-normal;
+	font-size: 16px;
+	line-height: 28px;
+	position: relative;
+	right: 0px;
+	top: -6px;
+}
+.form-info-btn{
+	width: 49%;
+	padding: 20px 40px;
+	border-radius: 4px;
+	background: $blue;
+	border: 1px solid #C2C8CD;
+	color: $white;
+	@extend %graphik-bold;
+	font-size: 20px;
+	line-height: 24px;
+	cursor: pointer;
+	&:hover{
+		background: $white;
+		color: $black;
+	}
+	&:active{
+		background: #C2C8CD;
+	}
+}
+
+/* FOOTER */
+
+.footer{
+	margin-top: 80px;
+	border-top: 1px solid #ECEFF2;
+}
+.footer-text{
+	text-align: center;
+	@extend %graphik-normal;
+	font-size: 18px;
+	line-height: 32px;
+	padding: 28px 0;
+}
+
+
+@import "media";
