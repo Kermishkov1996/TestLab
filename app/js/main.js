@@ -37,17 +37,17 @@ $(function () {
 	//открывает меню при нажатии на бургер
 	$('.menu-btn').on('click', function () {
 		$('.menu-list').slideToggle();
-		$('.menu-btn').toggleClass('menu-btn--active');
-    	$('.logo').toggleClass('logo--active');
-		$('body').toggleClass('menu--scroll');
+		$('.menu-btn').addClass('menu-btn--active');
+    	$('.logo').addClass('logo--active');
+		$('body').addClass('menu--scroll');
 	});
 
 	//закрывает меню при нажатии на ссылку или на любое место в меню
 	$('.menu-list').on('click', function () {
 		$('.menu-list').slideToggle();
-		$('.menu-btn').toggleClass('menu-btn--active');
-		$('.logo').toggleClass('logo--active');
-		$('body').toggleClass('menu--scroll');
+		$('.menu-btn').removeClass('menu-btn--active');
+		$('.logo').removeClass('logo--active');
+		$('body').removeClass('menu--scroll');
 	});
 
 	//раскрывает и закрывавет пункты вопросов
