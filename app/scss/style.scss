@@ -7,6 +7,10 @@ body{
 
 /* HEADER */
 
+.menu--scroll{
+	overflow: hidden;
+}
+
 .header{
 	position: relative;
 	z-index: 1;
@@ -63,7 +67,7 @@ body{
 /* TOP */
 
 .top{
-	background: url(../images/Lunch_atop_a_Skyscraper\ 1.png) #2A6CEA no-repeat;
+	background: url(../images/Skyscraper.png) #2A6CEA no-repeat;
 	background-position: center bottom;
 	background-size: cover;
 	background-blend-mode: overlay;
@@ -194,7 +198,7 @@ body{
 	height: 316px;
 	background-color: $white;
 	border-radius: 8px;
-	box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.10);
+	box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.10);
 	padding: 22px 22px 30px;
 }
 .reviews-box-photo{ 
@@ -248,13 +252,13 @@ body{
 	position: absolute;
 	top: 0;
 	left: 1184px;
-	padding: 138px 0px;
+	padding: 138px 0;
 	cursor: pointer;
 }
 .arrow-left{
 	position: absolute;
 	top: 0;
-	padding: 138px 0px;
+	padding: 138px 0;
 	cursor: pointer;
 }
 
@@ -304,8 +308,8 @@ body{
 .questions-item.questions-item--active{
 	.questions-item_title::after{
 		transform: rotate(315deg);
-    position: absolute;
-    right: -3px;
+    	position: absolute;
+    	right: -3px;
 	}
 	.questions-item_text{
 		display: block;
@@ -321,7 +325,7 @@ body{
 .credits-inner{
     display: flex;
     flex-wrap: wrap;
-		justify-content: space-between;
+	justify-content: space-between;
 }
 .credits-info{
 	max-width: 592px;
@@ -375,7 +379,7 @@ body{
 	font-size: 18px;
 	line-height: 32px;
 	&::placeholder{
-		color: rgba (#5E646A, .4);
+		color: rgba(#5E646A, .4);
 	}
 }
 #scales{
@@ -387,7 +391,7 @@ body{
 	font-size: 16px;
 	line-height: 28px;
 	position: relative;
-	right: 0px;
+	right: 0;
 	top: -6px;
 }
 .form-info-btn{

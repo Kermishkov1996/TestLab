@@ -6,7 +6,7 @@ $(function () {
   		slidesToScroll: 1,
   		arrows: true,
   		dots: true,
-			nextArrow: '<img src="images/fi-sr-angle-right.png" class="arrow-right" alt="right">',
+		nextArrow: '<img src="images/fi-sr-angle-right.png" class="arrow-right" alt="right">',
     	prevArrow: '<img src="images/fi-sr-angle-left.png" class="arrow-left" alt="left">',
   		responsive: [
 				{
@@ -37,7 +37,8 @@ $(function () {
 	$('.menu-btn').on('click', function () {
 		$('.menu-list').slideToggle();
 		$('.menu-btn').toggleClass('menu-btn--active');
-    $('.logo').toggleClass('logo--active');
+    	$('.logo').toggleClass('logo--active');
+		$('body').addClass('menu--scroll');
 	});
 
 	$('.questions-item_title').on('click', function () {
