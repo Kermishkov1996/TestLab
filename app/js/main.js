@@ -34,13 +34,23 @@ $(function () {
     	]
 	});
 
+	//открывает меню при нажатии на бургер
 	$('.menu-btn').on('click', function () {
 		$('.menu-list').slideToggle();
 		$('.menu-btn').toggleClass('menu-btn--active');
     	$('.logo').toggleClass('logo--active');
-		$('body').addClass('menu--scroll');
+		$('body').toggleClass('menu--scroll');
 	});
 
+	//закрывает меню при нажатии на ссылку или на любое место в меню
+	$('.menu-list').on('click', function () {
+		$('.menu-list').slideToggle();
+		$('.menu-btn').toggleClass('menu-btn--active');
+		$('.logo').toggleClass('logo--active');
+		$('body').toggleClass('menu--scroll');
+	});
+
+	//раскрывает и закрывавет пункты вопросов
 	$('.questions-item_title').on('click', function () {
     $('.questions-item').removeClass('questions-item--active');
     $(this).parent().addClass('questions-item--active');
